@@ -6,8 +6,8 @@ import com.thejoeun.zigbang.datas.Bang
 
 class MainActivity : AppCompatActivity() {
 
-
     val mBangList = ArrayList<Bang>()
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
