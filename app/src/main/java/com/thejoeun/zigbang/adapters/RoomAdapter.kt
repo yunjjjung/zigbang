@@ -45,7 +45,7 @@ class RoomAdapter(
 //        1만 미만 : 8,500 로 컴마만 추가 , 1만 이상 : 5억 4,500 등으로 억단위 별도 표기
 //        해당 기능도 Room의 기능으로 추가해서 사용하자
 
-        priceTxt.text =
+        priceTxt.text = "${data.getFormattedPrice()}"
 
         return row
 
