@@ -11,6 +11,8 @@ class Room(
     val floor : Int,
     val description : String) : Serializable {  // 상속을 받을 거예요
 
+    constructor(price : Int) : this(price, "주소 미정", 1, "가격만 넣은 방")
+
 
 //    가격 값에 따라 => 억단위 표시 여부 가공 기능 => 함수로.
 
