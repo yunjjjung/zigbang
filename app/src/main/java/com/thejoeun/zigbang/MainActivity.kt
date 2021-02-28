@@ -2,11 +2,11 @@ package com.thejoeun.zigbang
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.thejoeun.zigbang.datas.Bang
+import com.thejoeun.zigbang.datas.Room
 
 class MainActivity : AppCompatActivity() {
 
-    val mBangList = ArrayList<Bang>()
+    val mBangList = ArrayList<Room>()
 
 
     override fun onCreate(savedInstanceState: Bundle?) {

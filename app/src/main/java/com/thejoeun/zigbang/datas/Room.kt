@@ -1,6 +1,6 @@
 package com.thejoeun.zigbang.datas
 
-class Bang(
+class Room(
     val price : Int,
     val address : String,
     val floor : Int,
