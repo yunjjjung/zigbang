@@ -1,5 +1,6 @@
 package com.thejoeun.zigbang.datas
 
+import java.io.Serializable
 import java.lang.NumberFormatException
 import java.text.NumberFormat
 import java.util.*
@@ -8,7 +9,7 @@ class Room(
     val price : Int,
     val address : String,
     val floor : Int,
-    val description : String) {
+    val description : String) : Serializable {  // 상속을 받을 거예요
 
 
 //    가격 값에 따라 => 억단위 표시 여부 가공 기능 => 함수로.

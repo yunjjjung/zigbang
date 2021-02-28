@@ -1,5 +1,6 @@
 package com.thejoeun.zigbang
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ArrayAdapter
@@ -33,6 +34,21 @@ class MainActivity : AppCompatActivity() {
 
         mAdapter = RoomAdapter(this, R.layout.room_list_item, mRoomList)
         roomListView.adapter = mAdapter
+
+        roomListView.setOnItemClickListener { parent, view, position, id ->
+
+//            클릭된 방이 어떤 방인지
+            val clickedRoom = mRoomList[position]
+
+//            이 방 정보를 들고 => 상세화면으로 이동. Intent(2) 사용
+            val myIntent = Intent(this, ViewRoomDetailActivity::class.java)
+
+            myIntent.putExtra("roomInfo",clickedRoom)
+
+            startActivity(myIntent)
+
+
+        }
 
     }
 }
